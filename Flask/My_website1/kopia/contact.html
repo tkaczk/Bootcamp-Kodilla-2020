@@ -1,0 +1,15 @@
+{% extends "parent.html" %}
+{% block content %}
+	<h1 class="intro"><strong>Kontakt</strong></h1>
+		<ul class="list">
+			{% for means in contact_info %}
+			<li>{{means}}</li>
+			{% endfor %}
+		</ul>
+	<h2><b>Wyślij wiadomość</b></h2>
+	<form action="/contact" method="POST">
+		<textarea rows="5" cols="60">
+		</textarea>
+		<input type="submit" value="Prześlij">
+	</form>
+{% endblock %}

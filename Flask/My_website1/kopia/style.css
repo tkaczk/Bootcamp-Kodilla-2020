@@ -1,0 +1,7 @@
+p {
+	font-size:22px
+}
+.list {
+	font-size:22px;
+}
+div#errors li {color: red;}
